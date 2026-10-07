@@ -62,3 +62,21 @@ body {
     display: grid;
     gap: 1rem;
 }
+
+@media (min-width: 768px) {
+    .page-wrapper {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav    main"
+            "footer footer";
+    }
+ 
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .card-1 {
+        grid-column: 1 / -1;
+    }
+}
