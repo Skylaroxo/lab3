@@ -71,6 +71,14 @@ body {
             "nav    main"
             "footer footer";
     }
+
+    .nav {
+        margin: 0 0 0 1rem;
+    }
+ 
+    .main {
+        padding: 0 1rem 0 0;
+    }
  
     .cards {
         grid-template-columns: repeat(2, 1fr);
