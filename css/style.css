@@ -48,6 +48,11 @@ body {
  
 .nav a {
     color: #383838;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
 }
  
 .main {
