@@ -11,4 +11,54 @@ body {
     background-color: #f5f9ff;
 }
  
+.header { grid-area: header; }
+.nav    { grid-area: nav; }
+.main   { grid-area: main; }
+.footer { grid-area: footer; }
 
+.page-wrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+.header,
+.footer {
+    background-color: #b6daff;
+    padding: 1rem;
+    text-align: center;
+}
+ 
+.nav,
+.card {
+    background-color: #fff;
+    border: 1px solid #b6daff;
+    border-radius: 8px;
+    padding: 1rem;
+}
+ 
+.nav ul {
+    list-style: none;
+}
+ 
+.nav a {
+    color: #383838;
+}
+ 
+.main {
+    padding: 0 1rem;
+}
+ 
+.nav {
+    margin: 0 1rem;
+}
+ 
+.cards {
+    display: grid;
+    gap: 1rem;
+}
